@@ -14,7 +14,7 @@ bot.on('message', message => {
         if(!member) return message.channel.send(`\*vores ${message.author.username}\*`)
         message.channel.send(`\*${message.author.username} vores ${member.user.username}\*`)
      //   message.channel.send(`*vores ${member.user.username}*`)
-    }else if((message.content.toUpperCase().includes("VORE")) || (message.content.toUpperCase().includes("\\/ORE"))) {
+    }else if((message.content.toUpperCase().includes("VORE")) || (message.content.toUpperCase().includes("V​ORE"))) {
         message.channel.send(`\*vores ${message.author.username}\*`)
     }
 
