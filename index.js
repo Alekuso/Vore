@@ -11,11 +11,11 @@ bot.on('message', message => {
 
     if(message.content.startsWith("!vore")) {
         let member = message.mentions.members.first();
-        if(!member) return message.channel.send(`*vores ${message.author.username}*`)
-
-        message.channel.send(`*vores ${member.user.username}*`)
+        if(!member) return message.channel.send(`\*vores ${message.author.username}\*`)
+        message.channel.send(`\*${message.author.username} vores ${member.user.username}\*`)
+     //   message.channel.send(`*vores ${member.user.username}*`)
     }else if((message.content.toUpperCase().includes("VORE")) || (message.content.toUpperCase().includes("\\/ORE"))) {
-        message.channel.send(`*vores ${message.author.username}*`)
+        message.channel.send(`\*vores ${message.author.username}\*`)
     }
 
 
